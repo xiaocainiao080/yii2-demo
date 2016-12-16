@@ -36,14 +36,21 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+
+
+        'wechat' => [
+            'class' => 'maxwen\easywechat\Wechat',
+//            'userOptions' => ['role'],     //# 用户身份类参数
+//            'sessionParam' => 'wxUserInfo',    //# 微信用户信息将存储在这个关键字下面
+//            'returnUrlParam' => ''  //# 存储在会话ReturnUrl参数
+        ],
+
     ],
     'params' => $params,
 ];
